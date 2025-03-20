@@ -1,0 +1,49 @@
+Router 2 
+
+en
+config t
+int g0/0
+ip add 10.0.0.1 255.255.255.0
+no shut
+exit
+
+ip dhcp pool class 
+network 10.0.0.0 255.255.255.0
+default-router 10.0.0.1
+dns-server 10.0.0.50
+exit
+
+int s0/0/0
+ip add 192.168.1.1 255.255.255.0
+clock rate 64000
+no sh
+exit
+
+go to pc and change it DHCP
+
+x-------x-----x--------x------x-------x---------x-------x---
+
+Route 1  - 192.168.1.1
+
+en
+config t
+int g0/0
+ip add 192.168.1.1 255.255.255.0
+no shut
+exit
+
+ip dhcp pool mi
+network 192.168.1.0 255.255.255.0
+default-router 192.168.1.1
+dns-server 192.168.1.50
+exit
+
+int s0/0/0
+ip add 10.0.0.1 255.255.255.0
+no sh 
+exit 
+
+
+
+Now ping the device with the other device
+
