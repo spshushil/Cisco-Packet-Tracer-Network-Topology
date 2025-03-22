@@ -1,5 +1,5 @@
 # Cisco-Packet-Tracer-Network-Topology
-I'm have started my Cloud Computing course at Besant Technologies, Anna Nagar. As part of my learning, I’ve been working on CCNA-based projects that involve configuring network connections between various devices such as routers, switches, WiFi, PCs, tablets, and mobile devices.
+I'm have started my Cloud Computing project.<br> As part of my learning, I’ve been working on CCNA-based projects that involve configuring network connections between various devices such as routers, switches, WiFi, PCs, tablets, and mobile devices.
 
 One of my recent projects focused on DHCP configuration:<br>
 ✅ Configured routers to assign IP addresses dynamically within a defined range.<br>
